@@ -1,0 +1,57 @@
+// ================================================ COLORS =============================================================
+
+$colors: (
+
+        primary1 : #3D3935,
+        primary2 : #0076A9,
+        primary3 : #61B4E4,
+
+        secondary1 : #f9f9f9,
+        secondary2 : #efefef,
+        secondary3 : #bdbdbd,
+        secondary4 : #848383,
+
+        signal1 : #dc5416,
+        signal2 : #ff9666,
+        signal3 : #86a73f,
+        signal4 : #7e5b90,
+        signal5 : #33af95,
+        signal6 : #f9be3e,
+
+
+);
+
+@function color($key) {
+  @if map-has-key($colors, $key) {
+    @return map-get($colors, $key);
+  }
+
+  @warn "Unknown `#{$key}` in $colors.";
+  @return null;
+}
+
+
+// ================================================ FONTS ==============================================================
+
+@mixin font1() {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@mixin font2() {
+  font-family: 'Playfair Display', serif;
+}
+
+// =============================================== CLEARFIX ============================================================
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.clearfix {
+  display: inline-block;
+}
