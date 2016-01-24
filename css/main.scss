@@ -220,6 +220,10 @@ nav {
         display:none;
       }
     }
+
+    @media (max-width:640px){
+      display:none;
+    }
   }
 
 
@@ -227,6 +231,10 @@ nav {
     position:absolute;
     left:30px;
     top:55px;
+
+    @media (max-width:640px){
+      left:20px;
+    }
   }
 
 
@@ -257,6 +265,24 @@ nav {
       }
 
     }
+
+    @media (max-width:640px){
+      display:none;
+    }
+  }
+
+  .btn-mobile-menu {
+    display:none;
+    width:32px;
+    height:32px;
+    background:url(../img/mobile-menu.png) no-repeat;
+
+    @media (max-width:640px){
+      display:block;
+      position:absolute;
+      right:20px;
+      top:55px;
+    }
   }
 
 }
@@ -286,16 +312,51 @@ nav {
     color:#fff;
   }
 
+  @media (max-width:768px){
+
+    h1 {
+      font-size:36px;
+      line-height:40px;
+    }
+
+    h3 {
+      font-size:20px;
+      line-height:25px;
+    }
+  }
+
+  @media (max-width:640px){
+    width:85%;
+
+    h1 {
+      font-size:20px;
+      line-height:24px;
+    }
+
+    h3 {
+      font-size:14px;
+      line-height:18px;
+    }
+  }
+
 }
 
 .text-box-left {
   bottom:50px;
   left:20px;
+
+  @media (max-width:640px){
+    bottom:20px;
+  }
 }
 
 .text-box-right {
   bottom:50px;
   right:20px;
+
+  @media (max-width:640px){
+    bottom:20px;
+  }
 }
 
 
@@ -403,6 +464,9 @@ main {
 
 }
 
+.facebook_widget {
+  margin-bottom:40px;
+}
 
 
 .section-title {
@@ -430,6 +494,10 @@ main {
       padding:15px 10px;
       border:1px solid #353940;
       min-height:170px;
+;
+      @media (max-width:640px){
+        margin-bottom:20px;
+      }
     }
 
     h5 {
@@ -458,6 +526,14 @@ main {
   height:60px;
   background:#353940;
 
+  @media (max-width:640px){
+    padding:10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height:auto;
+  }
+
   .social-buttons-stripe-inner {
     max-width:980px;
     width:100%;
@@ -473,11 +549,20 @@ main {
         float:left;
         margin-right:35px;
 
+        @media (max-width:640px){
+          width:25%;
+          margin:0 0 20px 0;
+        }
+
         a {
           text-decoration:none;
           position:relative;
           height:28px;
           display:block;
+
+          @media (max-width:640px){
+            margin:auto;
+          }
 
           &.icon-f {
             width:27px;
