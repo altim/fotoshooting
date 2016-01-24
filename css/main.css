@@ -135,7 +135,7 @@ nav {
         margin: 0px 9px; }
       nav .menu-top-right li:last-child:after {
         display: none; }
-    @media (max-width: 640px) {
+    @media (max-width: 930px) {
       nav .menu-top-right {
         display: none; } }
   nav .logo {
@@ -152,7 +152,12 @@ nav {
     right: 40px; }
     nav .menu-main li {
       float: left;
-      margin-right: 30px; }
+      margin-right: 30px;
+      position: relative;
+      padding-bottom: 25px; }
+      nav .menu-main li.hover {
+        background: url(../img/menu-arrow-up.png) no-repeat;
+        background-position: center bottom; }
       nav .menu-main li a {
         font-family: 'Montserrat', sans-serif;
         font-size: 16px;
@@ -167,15 +172,44 @@ nav {
           color: #029ada; }
       nav .menu-main li:last-child {
         margin-right: 0px; }
-    @media (max-width: 640px) {
+    @media (max-width: 930px) {
       nav .menu-main {
         display: none; } }
+  nav .submenu {
+    position: absolute;
+    top: 115px;
+    left: 0px;
+    width: 100%;
+    background: #fff;
+    border-top: 3px solid #353940;
+    display: none;
+    padding: 20px; }
+    nav .submenu li {
+      float: left;
+      width: 31.3333%;
+      height: 35px;
+      border-bottom: 1px solid #353940;
+      margin-right: 2%; }
+      nav .submenu li a {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        color: #353940;
+        text-decoration: none;
+        -webkit-transition: color 0.4s;
+        -moz-transition: color 0.4s;
+        -ms-transition: color 0.4s;
+        -o-transition: color 0.4s;
+        transition: color 0.4s;
+        display: block;
+        line-height: 35px; }
+        nav .submenu li a:hover {
+          color: #029ada; }
   nav .btn-mobile-menu {
     display: none;
     width: 32px;
     height: 32px;
     background: url(../img/mobile-menu.png) no-repeat; }
-    @media (max-width: 640px) {
+    @media (max-width: 930px) {
       nav .btn-mobile-menu {
         display: block;
         position: absolute;
@@ -350,7 +384,13 @@ main {
     width: 100%;
     margin: auto;
     overflow: hidden;
-    padding: 17px 0px; }
+    padding: 17px 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    @media (max-width: 640px) {
+      .social-buttons-stripe .social-buttons-stripe-inner {
+        padding: 17px 0px; } }
     .social-buttons-stripe .social-buttons-stripe-inner ul {
       list-style: none;
       overflow: hidden; }
