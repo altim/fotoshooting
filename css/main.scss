@@ -120,6 +120,11 @@ $colors: (
 .img-responsive {
   width:100%;
   max-width:100%;
+  display:block;
+}
+
+.pull-right {
+  float:right;
 }
 
 @media (max-width:640px){
@@ -167,6 +172,11 @@ h5 {
   text-decoration: none;
   padding:11px 40px;
   color:#353940;
+
+  @include font2;
+  font-size:15px;
+  line-height:17px;
+  font-style: italic;
 }
 
 .btn-block {
@@ -493,6 +503,8 @@ nav {
 
 
 
+
+
 main {
   max-width:980px;
   margin:auto;
@@ -718,4 +730,96 @@ main {
   }
 
 
+}
+
+
+
+.content-right {
+  overflow:hidden;
+  margin-bottom:40px;
+
+  h1 {
+    margin-bottom:20px;
+  }
+
+  p {
+    @include font2;
+    font-size:18px;
+    line-height:22px;
+  }
+}
+
+.image-mosaic {
+
+  img {
+    margin-bottom: 20px;
+  }
+}
+
+.box-2 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding:20px;
+  background:#353a40;
+  min-height:338px;
+
+  h1 {
+    color:#fff;
+    margin-bottom:80px;
+  }
+
+  a {
+    @include font2;
+    color:#fff;
+    text-decoration: none;
+  }
+
+  @media (max-width:640px){
+    margin-bottom:20px;
+  }
+}
+
+
+
+.card-small2 {
+  position:relative;
+
+  .card-top {
+    overflow:hidden;
+    img {
+      width:100%;
+      max-width:100%;
+      display:block;
+      float:left;
+    }
+  }
+
+  .card-bottom {
+    padding:7px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align:center;
+
+    h5 {
+      font-size:18px;
+      line-height:20px;
+      margin:10px 0px;
+      text-align:center;
+    }
+
+    p {
+      font-family: Arial, Helvetica, serif;
+      font-size:12px;
+      line-height:14px;
+      margin-bottom:10px;
+      font-weight:200;
+    }
+
+  }
+
+  &.card4 {
+    margin-bottom:20px;
+  }
 }
